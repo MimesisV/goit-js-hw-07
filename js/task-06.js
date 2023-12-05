@@ -21,10 +21,12 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   newBoxes.innerHTML = '';
+  inputValue.value = '';
 }
 
 createButton.addEventListener('click', () => {
   const amount = inputValue.value;
+  inputValue.value = '';
 
   amount >= 1 && amount <= 100 ? createBoxes(amount) : alert('Please enter a number between 1 and 100.');
 });
