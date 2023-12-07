@@ -227,3 +227,8 @@ button[data-destroy] {
   gap: 10px;
   background-color: #F6F6FE;
 }
+
+
+.boxes-item {
+  flex-shrink: 0;
+}

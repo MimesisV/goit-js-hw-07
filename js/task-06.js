@@ -17,6 +17,7 @@ function createBoxes(amount) {
     box.style.width = 30 + i * 10 + "px";
     box.style.height = 30 + i * 10 + "px";
     box.style.backgroundColor = getRandomHexColor();
+    box.classList.add("boxes-item")
     newBoxes.appendChild(box)
   }
 }
